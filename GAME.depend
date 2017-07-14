@@ -1,0 +1,33 @@
+# depslib dependency file v1.0
+1499887912 source:f:\projects\c++\game\src\databank.cpp
+	"databank.h"
+
+1499888223 f:\projects\c++\game\include\databank.h
+	<SDL2/SDL.h>
+	<vector>
+	<functional>
+
+1499951494 source:f:\projects\c++\game\main.cpp
+	<iostream>
+	<SDL2/SDL.h>
+	<windows.h>
+	<functional>
+	<wall.h>
+	<databank.h>
+
+1499799915 source:f:\projects\c++\game\src\block.cpp
+	"block.h"
+
+1499800264 f:\projects\c++\game\include\block.h
+	<vector>
+	<databank.h>
+
+1499875381 source:f:\projects\c++\game\src\wall.cpp
+	"wall.h"
+
+1499804629 f:\projects\c++\game\include\wall.h
+	<block.h>
+	<SDL2/SDL.h>
+	<iostream>
+	<databank.h>
+
