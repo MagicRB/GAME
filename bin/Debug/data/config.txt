@@ -1,0 +1,2 @@
+controls;Main
+player;Main

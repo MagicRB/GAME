@@ -8,6 +8,7 @@
 		<Build>
 			<Target title="Debug">
 				<Option output="bin/Debug/GAME" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="./bin/Debug/" />
 				<Option object_output="obj/Debug/" />
 				<Option type="1" />
 				<Option compiler="mingw_compiler" />
@@ -18,6 +19,7 @@
 			</Target>
 			<Target title="Release">
 				<Option output="bin/Release/GAME" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="./bin/Release/" />
 				<Option object_output="obj/Release/" />
 				<Option type="1" />
 				<Option compiler="mingw_compiler" />
@@ -36,11 +38,9 @@
 		</Compiler>
 		<Unit filename="include/block.h" />
 		<Unit filename="include/databank.h" />
-		<Unit filename="include/wall.h" />
 		<Unit filename="main.cpp" />
 		<Unit filename="src/block.cpp" />
 		<Unit filename="src/databank.cpp" />
-		<Unit filename="src/wall.cpp" />
 		<Extensions>
 			<code_completion />
 			<envvars />
