@@ -9,7 +9,9 @@
 
 #include <block.h>
 
+#ifdef _WIN32
 #include <windows.h>
+#endif // _WIN32
 
 class databank
 {
@@ -19,8 +21,8 @@ class databank
 
         struct position
         {
-            int x;
-            int y;
+            float x;
+            floatb= y;
         };
 
         void setSDL_WINDOW(SDL_Window* win);
@@ -72,8 +74,14 @@ class databank
         std::vector<std::function<void(databank*, std::vector<std::string>)>> loadEvent;
         std::vector<std::function<void(databank*)>> eventEvent;
 
+        #ifdef _WIN32
         std::vector<HINSTANCE> hvdll;
         std::vector<std::string> svdll;
+        #else
+        std::vector<void*> hvdll;
+        std::vector<std::string> svdll;
+        #endif // _WIN32
+
 
         void safeQuit();
 
@@ -84,8 +92,8 @@ class databank
         std::vector<block*> bl_v;
         std::vector<position> blp_v;
 
-        int plx = 0;
-        int ply = 0;
+        float plx = 0;
+        float ply = 0;
 
     protected:
 

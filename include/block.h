@@ -20,26 +20,19 @@ class block
             int y;
         };
 
-        enum rotations {none, up, down, left, right};
-
-        rotations rot1;
-        rotations rot2;
-
-        int render(databank* db);
-        int init(databank* db);
-        void setPos(int x, int y);
-        void setRot(rotations rot1x, rotations rot2x);
-        bool getCollision(databank* db/*, player* pl*/);
-
-        position getPos();
+        virtual int render(databank* db) = 0;
+        virtual int init(databank* db) = 0;
+        virtual void setPos(float x, float y) = 0;
+        virtual bool getCollision(databank* db/*, player* pl*/) = 0;
+        virtual position getPos() = 0;
 
 
         std::string tPath;
 
     protected:
 
-        int x = 0;
-        int y = 0;
+        float x = 0;
+        float y = 0;
 
         SDL_Texture* texture = NULL;
         SDL_Rect rect;

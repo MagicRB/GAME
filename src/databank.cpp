@@ -1,5 +1,9 @@
 #include "databank.h"
 
+#ifndef _WIN32
+#include <dlfcn.h>
+#endif // _WIN32
+
 #include <SDL2/SDL.h>
 #include <SDL2/SDL_image.h>
 
@@ -159,6 +163,13 @@ void databank::safeQuit()
     SDL_DestroyRenderer(getSDL_RENDERER());
     SDL_Quit();
     IMG_Quit();
+
+    #ifndef _WIN32
+    for (unsigned short int i; i < svdll.size(); i++)
+    {
+        dlclose(hvdll.at(i));
+    }
+    #endif // _WIN32
 
     exit(0);
 }

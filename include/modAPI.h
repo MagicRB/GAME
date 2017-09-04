@@ -15,7 +15,7 @@ class modAPI
         modAPI();
         ~modAPI();
 
-        safeQuit();
+        void safeQuit();
 
     protected:
 
