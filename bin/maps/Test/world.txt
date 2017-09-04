@@ -1,0 +1,114 @@
+#
+# Important definitions
+#
+Main;player;2;-3
+#
+#
+# Corners
+#
+Main;wall;-4;-4;lu_corner
+Main;wall;4;-4;ru_corner
+Main;wall;-4;4;ld_corner
+Main;wall;4;4;rd_corner
+#
+# Poles
+#
+Main;wall;-2;-2;pole
+Main;wall;2;-2;pole
+Main;wall;-2;2;pole
+Main;wall;2;2;pole
+#
+# Middle
+#
+Main;wall;0;0;middle_w_corners
+#
+# Left arm
+#
+Main;wall;-1;0;horizontal
+Main;wall;-2;0;horizontal
+Main;wall;-3;0;horizontal
+#
+# Right arm
+#
+Main;wall;1;0;horizontal
+Main;wall;2;0;horizontal
+Main;wall;3;0;horizontal
+#
+# Up arm
+#
+Main;wall;0;-1;vertical
+Main;wall;0;-2;vertical
+Main;wall;0;-3;vertical
+#
+# Down arm
+#
+Main;wall;0;1;vertical
+Main;wall;0;2;vertical
+Main;wall;0;3;vertical
+#
+# Up side left
+#
+Main;wall;-1;-4;horizontal
+Main;wall;-2;-4;horizontal
+Main;wall;-3;-4;horizontal
+#
+# Up side right
+#
+Main;wall;1;-4;horizontal
+Main;wall;2;-4;horizontal
+Main;wall;3;-4;horizontal
+#
+# Down side left
+#
+Main;wall;-1;4;horizontal
+Main;wall;-2;4;horizontal
+Main;wall;-3;4;horizontal
+#
+# Down side right
+#
+Main;wall;1;4;horizontal
+Main;wall;2;4;horizontal
+Main;wall;3;4;horizontal
+#
+# Left side up
+#
+Main;wall;-4;-1;vertical
+Main;wall;-4;-2;vertical
+Main;wall;-4;-3;vertical
+#
+# Left side down
+#
+Main;wall;-4;1;vertical
+Main;wall;-4;2;vertical
+Main;wall;-4;3;vertical
+#
+# Right side up
+#
+Main;wall;4;-1;vertical
+Main;wall;4;-2;vertical
+Main;wall;4;-3;vertical
+#
+# Right side down
+#
+Main;wall;4;1;vertical
+Main;wall;4;2;vertical
+Main;wall;4;3;vertical
+#
+# Up T
+#
+Main;wall;0;-4;t_up
+#
+# Up T
+#
+Main;wall;0;4;t_down
+#
+# Up T
+#
+Main;wall;-4;0;t_left
+#
+# Up T
+#
+Main;wall;4;0;t_right
+#
+#
+Main;sign;6;-5;h
